@@ -12,4 +12,4 @@ bitwise_op.o: bitwise_op.c
 
 sample:
 	make duckbits
-	./duckbits
+	./duckbits file.test
