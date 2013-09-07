@@ -54,7 +54,7 @@ void Duckfile(FILE * fptr_in, FILE * fptr_out){
 	char duck_key[64];
   srand(time(NULL));
 
-	printf("\nPlease specify the Ducking-Key (512 bits): ");
+	printf("\nPlease specify the Ducking-Key (512 bits): "); //TODO: Key is not actually used yet in this version
 	scanf("%s",duck_key);
 
 
@@ -99,7 +99,7 @@ void Duckfile(FILE * fptr_in, FILE * fptr_out){
         
 
    		 	int writebit = getBitFromByte(i, block);
-   		 	int FLIP_THIS_BIT = rand() % 2; 
+   		 	int FLIP_THIS_BIT = rand() % 2; //Using rand for now, if this is a fixed key 'reverse-ducking' would work
 
    		 	if(FLIP_THIS_BIT){
    		 		//If the  Ducking-Key tells you to duck this bit, do it
