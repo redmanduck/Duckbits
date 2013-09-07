@@ -30,6 +30,6 @@ It is possible for a file to be ducked multiple times by multiple keys. To unduc
     ./duckbits <file_to_be_ducked>
 
 and you can also do a reverse ducking
-	./duckbits <ducked_file>
+    ./duckbits <ducked_file>
 
 Disclaimer: This is for experimental purpose and is by no mean a secure way of encrypting your documents. Use it at your own risk, or fork it :)
