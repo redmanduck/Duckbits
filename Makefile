@@ -13,3 +13,6 @@ bitwise_op.o: bitwise_op.c
 sample:
 	make duckbits
 	./duckbits file.test
+
+clean:
+	rm *.o duckbits
