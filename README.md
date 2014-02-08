@@ -20,6 +20,12 @@ The ducking key is converted into binary, for example "foobar" will become "0110
 
 Because of this, the algorithm is two-way if you have the ducking key. 
 
+However, because brute force can be used to flip 2^n bits where n is the total length of the file decryption by brute force may produce a possible solution. To address this, 
+
+Duckbits algorithm arbitarily adds a "Secret Block" (SB) of random bit vector size of (K^2 + 1), where K is the integer Sum of the 8 bits preceeding the SB insertion point, J. 
+
+The insertion point J is dependent on the Ducking Key bit ordering. 
+
 ## Repetition
 
 It is possible for a file to be ducked multiple times by multiple keys. To unduck the file, you must unduck the ducked file in the exact reverse order with its respective key(s). 
